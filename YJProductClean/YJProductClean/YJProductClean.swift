@@ -46,10 +46,10 @@ private extension YJProductClean {
             return
         }
         let path = self.projectPath.nsString.appendingPathComponent(relativePath)
-        if relativePath.hasSuffix(".framework") || relativePath.hasSuffix(".a") {
+        if relativePath.hasSuffix(".framework") || relativePath.hasSuffix(".a") || relativePath.hasSuffix(".bundle") {
             self.otherFiles.append(path)
             return
-        }        
+        }
         let fileManager = FileManager.default
         var isDirectory = ObjCBool(false)
         if (fileManager.fileExists(atPath: path, isDirectory: &isDirectory)) {
@@ -100,10 +100,10 @@ private extension YJProductClean {
         for value in self.allClasses.values {
             queue.async(group: group) {
                 print("解析文件：\(value.name)\t......")
-                if value.hPath != nil || value.mPath != nil {
-                    self.parsingOCClass(projectClass: value)
-                } else if value.swiftPath != nil {
+                if value.swiftPath != nil {
                     self.parsingSwiftClass(projectClass: value)
+                } else {
+                    self.parsingOCClass(projectClass: value)
                 }
             }
         }
@@ -127,6 +127,9 @@ private extension YJProductClean {
         }
         if projectClass.mPath != nil {
             paths.append(projectClass.mPath!)
+        }
+        if projectClass.mmPath != nil {
+            paths.append(projectClass.mmPath!)
         }
         do {
             let regex = try NSRegularExpression(pattern: "\"[^\"]+.h\"", options: NSRegularExpression.Options(rawValue: 0))

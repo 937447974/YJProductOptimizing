@@ -14,6 +14,7 @@ class YJProductClass: NSObject {
     var name: String = ""
     var hPath: String?
     var mPath: String?
+    var mmPath: String?
     var xibPath: String?
     var swiftPath: String?
     
@@ -24,6 +25,9 @@ class YJProductClass: NSObject {
         }
         if self.mPath != nil {
             dict["mPath"] = self.mPath
+        }
+        if self.mmPath != nil {
+            dict["mmPath"] = self.mmPath
         }
         if self.xibPath != nil {
             dict["xibPath"] = self.xibPath
