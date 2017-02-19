@@ -46,6 +46,10 @@ private extension YJProductClean {
             return
         }
         let path = self.projectPath.nsString.appendingPathComponent(relativePath)
+        if relativePath.hasSuffix(".framework") || relativePath.hasSuffix(".a") {
+            self.otherFiles.append(path)
+            return
+        }        
         let fileManager = FileManager.default
         var isDirectory = ObjCBool(false)
         if (fileManager.fileExists(atPath: path, isDirectory: &isDirectory)) {
@@ -134,7 +138,7 @@ private extension YJProductClean {
                     if fileName == projectClass.name {
                         continue
                     }
-                    if let usedProjectClass = self.allClasses[projectClass.name] {
+                    if let usedProjectClass = self.allClasses[fileName] {
                         usedProjectClass.used = true
                     }
                 }

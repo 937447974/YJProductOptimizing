@@ -14,7 +14,7 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.pClean.projectPath = "/Users/admin/Desktop/YJProductClean"//"/Users/admin/Desktop/GitHub/YJCocoa/Developer/DeveloperTools/YJTimeProfiler"
+        self.pClean.projectPath = "/Users/admin/Desktop/GitHub/YJCocoa/Developer/AppFrameworks/YJFoundation"
         self.pClean.ignorePath = ["Podfile", "Podfile.lock", "Pods"]
         self.pClean.startClean()
     }
