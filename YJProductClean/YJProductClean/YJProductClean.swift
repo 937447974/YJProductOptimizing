@@ -114,7 +114,9 @@ private extension YJProductClean {
                     self.unUsedClasses[value.name] = value
                 }
             }
-            print("\n\n\n分析完毕\n未使用的文件：\n\(self.unUsedClasses)\n\n其他文件:\n\(self.otherFiles)")
+            print("\n\n\n分析完毕：\(self.allClasses.count)")
+            print("\n未使用的文件：\(self.unUsedClasses.count)\n\(self.unUsedClasses)")
+            print("\n其他文件:\(self.otherFiles.count)\n\(self.otherFiles)")
         }
     }
     
