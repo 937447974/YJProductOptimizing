@@ -83,6 +83,8 @@ private extension YJProductClean {
             productClass!.hPath = filePath
         } else if pathExtension == "m" {
             productClass!.mPath = filePath
+        } else if pathExtension == "mm" {
+            productClass!.mmPath = filePath
         } else if pathExtension == "xib" {
             productClass!.xibPath = filePath
         } else if pathExtension == "swift" {
