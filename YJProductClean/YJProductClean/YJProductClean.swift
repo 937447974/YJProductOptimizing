@@ -124,7 +124,8 @@ private extension YJProductClean {
         var paths = Array<String>()
         if projectClass.hPath != nil {
             paths.append(projectClass.hPath!)
-        } else if projectClass.mPath != nil {
+        }
+        if projectClass.mPath != nil {
             paths.append(projectClass.mPath!)
         }
         do {
