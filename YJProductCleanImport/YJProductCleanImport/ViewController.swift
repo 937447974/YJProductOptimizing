@@ -9,19 +9,15 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+    
+    private let pClean = YJProductClean()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.pClean.projectPath = "/Users/admin/Desktop/mobile_ios/JuMei/Src/Tag/1.0.0/Classes/Controller/Search"
+        self.pClean.ignorePath = ["Podfile", "Podfile.lock", "Pods", "Resources"]
+        self.pClean.startClean()
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
-
+    
 }
 

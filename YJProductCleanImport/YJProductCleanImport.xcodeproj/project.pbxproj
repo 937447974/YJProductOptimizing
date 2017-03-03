@@ -11,6 +11,8 @@
 		845D1C641E691BE80030BDEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D1C631E691BE80030BDEE /* ViewController.swift */; };
 		845D1C661E691BE80030BDEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845D1C651E691BE80030BDEE /* Assets.xcassets */; };
 		845D1C691E691BE80030BDEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845D1C671E691BE80030BDEE /* Main.storyboard */; };
+		845D1C721E691E5D0030BDEE /* YJProductClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D1C701E691E5D0030BDEE /* YJProductClass.swift */; };
+		845D1C731E691E5D0030BDEE /* YJProductClean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D1C711E691E5D0030BDEE /* YJProductClean.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		845D1C651E691BE80030BDEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845D1C681E691BE80030BDEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		845D1C6A1E691BE80030BDEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845D1C701E691E5D0030BDEE /* YJProductClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJProductClass.swift; sourceTree = "<group>"; };
+		845D1C711E691E5D0030BDEE /* YJProductClean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJProductClean.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		845D1C601E691BE80030BDEE /* YJProductCleanImport */ = {
 			isa = PBXGroup;
 			children = (
+				845D1C741E691E650030BDEE /* Core */,
 				845D1C611E691BE80030BDEE /* AppDelegate.swift */,
 				845D1C631E691BE80030BDEE /* ViewController.swift */,
 				845D1C651E691BE80030BDEE /* Assets.xcassets */,
@@ -59,6 +64,15 @@
 				845D1C6A1E691BE80030BDEE /* Info.plist */,
 			);
 			path = YJProductCleanImport;
+			sourceTree = "<group>";
+		};
+		845D1C741E691E650030BDEE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				845D1C701E691E5D0030BDEE /* YJProductClass.swift */,
+				845D1C711E691E5D0030BDEE /* YJProductClean.swift */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				845D1C641E691BE80030BDEE /* ViewController.swift in Sources */,
+				845D1C721E691E5D0030BDEE /* YJProductClass.swift in Sources */,
+				845D1C731E691E5D0030BDEE /* YJProductClean.swift in Sources */,
 				845D1C621E691BE80030BDEE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +302,7 @@
 				845D1C6F1E691BE80030BDEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
