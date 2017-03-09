@@ -11,6 +11,8 @@
 		84A8D4B31E71390F008B4407 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8D4B21E71390F008B4407 /* ViewController.swift */; };
 		84A8D4B51E71390F008B4407 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A8D4B41E71390F008B4407 /* Assets.xcassets */; };
 		84A8D4B81E71390F008B4407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A8D4B61E71390F008B4407 /* Main.storyboard */; };
+		84A8D4C21E714DD5008B4407 /* YJProductClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8D4C01E714DD5008B4407 /* YJProductClass.swift */; };
+		84A8D4C31E714DD5008B4407 /* YJProductClean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8D4C11E714DD5008B4407 /* YJProductClean.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		84A8D4B41E71390F008B4407 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84A8D4B71E71390F008B4407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84A8D4B91E71390F008B4407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A8D4C01E714DD5008B4407 /* YJProductClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJProductClass.swift; sourceTree = "<group>"; };
+		84A8D4C11E714DD5008B4407 /* YJProductClean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJProductClean.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		84A8D4AF1E71390F008B4407 /* YJProductCleanCycleImport */ = {
 			isa = PBXGroup;
 			children = (
+				84A8D4BF1E714DB4008B4407 /* Core */,
 				84A8D4B01E71390F008B4407 /* AppDelegate.swift */,
 				84A8D4B21E71390F008B4407 /* ViewController.swift */,
 				84A8D4B41E71390F008B4407 /* Assets.xcassets */,
@@ -59,6 +64,15 @@
 				84A8D4B91E71390F008B4407 /* Info.plist */,
 			);
 			path = YJProductCleanCycleImport;
+			sourceTree = "<group>";
+		};
+		84A8D4BF1E714DB4008B4407 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				84A8D4C01E714DD5008B4407 /* YJProductClass.swift */,
+				84A8D4C11E714DD5008B4407 /* YJProductClean.swift */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A8D4B31E71390F008B4407 /* ViewController.swift in Sources */,
+				84A8D4C21E714DD5008B4407 /* YJProductClass.swift in Sources */,
+				84A8D4C31E714DD5008B4407 /* YJProductClean.swift in Sources */,
 				84A8D4B11E71390F008B4407 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  YJProductCleanCycleImport
 //
-//  Created by admin on 2017/3/9.
+//  Created by 阳君 on 2017/3/9.
 //  Copyright © 2017年 YJCocoa. All rights reserved.
 //
 
