@@ -13,3 +13,7 @@
 ##YJProductCleanCycleImport
 
 清理.h中循环#import引用
+
+----
+
+![](https://raw.githubusercontent.com/937447974/Blog/master/Resources/2017031401.png)
